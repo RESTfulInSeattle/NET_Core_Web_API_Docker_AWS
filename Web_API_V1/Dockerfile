@@ -10,8 +10,10 @@ USER app
 # All subsequent commands in this stage will be executed within this directory.
 WORKDIR /app
 
-# Thee application will listen on port 80
+# The application will listen on these ports
 EXPOSE 80
+EXPOSE 8080
+EXPOSE 8081
 
 #Builder stage
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
